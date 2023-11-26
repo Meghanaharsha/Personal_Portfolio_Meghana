@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghana Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2b4a7f78e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>JAVA Full Stack Developer</p>
+            <h1>Hi my name is <span><br>Meghana.S</span> <!--<br>From Bangalore--></h1>
+        </div>
+    </div>
+  </div> 
+<!--------------------about--------------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>An   Inquisitive,   Ambitious   and   Motivated   student   studied   Bachelor   of   Technology at Presidency  University,  Bengaluru  trying  to  build  a  challenging  career  in  suitable  roles  in  Computer application sector 
+                    and in IT sector to utilize my technical and management skills for growth of organization as well as to 
+                    enhance my knowledge about new and emerging trends.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>MySQL</span></li>
+                            <li><span>DBMS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Angular.Js</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2023-May 2023</span><br>Rail Wheel Factory | Industrial Software Development Intern<br><br>Collaborated with a team of three members, which included two fellow interns and one experienced developer,
+                                to lead a project focused on MVC and .NET Framework for web page development.
+                           <br>Gained hands-on experience with MVC architecture and .NET Framework for web development.
+                               Enhanced proficiency in frontend development, including HTML, CSS, and JavaScript.
+                       </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>BTech From Presidency Universty</li>
+                            <li><span>2019</span><br>12th From Mount Carmel College</li>
+                            <li><span>2017</span><br>10th From Sri Sai Vidyalaya</li>
+                           
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!----------------Services------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create attractive and easy-to-use websites that work well on all devices,
+                     making sure your online presence leaves a positive impression and connects 
+                     effectively with your audience. My goal is to design websites that are not just 
+                     visually appealing but also user-friendly and modern.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <!--<div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Mobile Application Development</h2>
+                <p>ddddddddddddddd</p>
+                <a href="#">Learn more</a>
+            </div>-->
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Semantic Web in Healthcare</h2>
+                <p>The Semantic Web in Healthcare project employs RDF, OWL, and SPARQL to
+                    uses smart technology to make different health data talk to each other, ensuring 
+                    doctors have a complete picture of a patient's information.</p>
+                <a href="images/Meghana.pptx">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------------------portfolio---------------------------->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3>Online book store</h3>
+                <p>I developed an online bookstore, employing HTML to structure the webpage 
+                and CSS for aesthetic design, to provide users with an engaging and visually
+                pleasing platform for browsing and purchasing books.</p>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+                <h3>School Management</h3>
+                <p>The "School Management System" is a Java console application leveraging JDBC for connecting 
+                to a MySQL database. Users can interact with the system via the console to insert, delete, 
+                update, and view school data, emphasizing key details such as school ID, name, address, 
+                overall grade, and pin code in a straightforward text-based interface.</p>
+                <a href="https://github.com/Meghanaharsha/School-Management-System-using-JAVA-and-MySQL"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+                <h3>Radar System</h3>
+                <p>Implement a radar system to detect, sense, and visualize obstacles on a PC. 
+                    Improve situational awareness and safety through real-time obstacle information.</p>
+                <a href="images/RADAR SYSTEM IOT (1).pptx"><i class="fa-regular fa-file"></i></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/Meghanaharsha" class="btn">See More</a>
+</div>
+</div>
+
+
+<!----------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                 <h1 class="sub-title">Contact Me</h1>
+                 <p><i class="fa-sharp fa-solid fa-paper-plane"></i>meghanasud@gmail.com</p>
+                 <p><i class="fa-solid fa-phone"></i></i>9980228146</p>
+                 <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/meghana-sudarshan-6b479b245/"><i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+                 <a href="images/Meghana S.pdf" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                 </form>
+                 <span id="msg">
+                        
+                 </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw78F7D19_um7NYZuKFYf89AXd-RnYSQwFlWLw_IKxSJMqOTKNrqeV2tdahEJQeJ1ompA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
